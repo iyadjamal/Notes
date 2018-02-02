@@ -23,20 +23,22 @@
         android:id="@+id/linearLayout">
 
         <EditText
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
+            android:id="@+id/note"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Write your Notes here"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:selectAllOnFocus="false"
+            android:gravity="top"/>
     </LinearLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/save"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
+        android:text="Save"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
