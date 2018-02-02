@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             String LoadedText,s="";
             while ((LoadedText = Dis.readLine())!=null)
             {
-                s+=LoadedText;
+                s+=LoadedText+"\n";
             }
             Dis.close();
             Fis.close();
