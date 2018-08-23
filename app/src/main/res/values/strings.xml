@@ -2,4 +2,7 @@
     <string name="app_name">Simple Notes</string>
     <string name="save">Save</string>
     <string name="text_hint">Write your Notes here</string>
+    <string name="saved_successfully">Note Saved Successfully</string>
+    <string name="save_error">Note Can not be Saved due to error Try again later</string>
+    <string name="already_saved">Note already saved</string>
 </resources>

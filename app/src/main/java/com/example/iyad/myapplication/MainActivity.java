@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class MainActivity extends Activity {
+    private Note note;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,8 +16,12 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        Note note = new Note();
-        note.addButtonListener(this);
-        note.loadSavedFile(this);
+        note = new Note(this, "hi");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        note.release();
     }
 }
